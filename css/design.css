@@ -1,0 +1,324 @@
+@font-face {
+    font-family: "Garet-Book";
+    src: url(../fonts/Garet-Book.ttf) format('truetype');
+    src: url(../fonts/Garet-Book.woff) format('truetype');
+    src: url(../fonts/Garet-Book.woff2) format('truetype');
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: "Garet-Book", sans-serif;
+    font-size: 50%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*header{
+
+    height: 300px;
+    margin-top: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+}*/
+
+header {
+    position:  relative; /* Essential for positioning the pseudo-element overlay */
+    background-image: url('../images/pexels-kindelmedia-9889058.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Add your gradient or solid color overlay here */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)); 
+    z-index: -1; /* Puts the overlay behind the header content */
+}
+
+header img {
+
+    display: block;
+
+
+}
+
+main{
+
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding:10px;
+    align-items:center;
+
+
+}
+
+.imageContainer {
+
+   margin:auto;
+
+}
+
+.imageContainer img {
+
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    object-fit: cover;
+
+}
+
+h2{
+    font-weight: 200;
+
+}
+
+
+header{
+
+   align-items: center; 
+   background-color: gray;
+
+
+}
+
+.email-footer{
+
+    /*display: flex;*/
+    background-color: gray;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contact-left{
+
+    background-color: gray;
+    display: grid;
+    grid-template-columns: auto ;
+    align-items: center;
+    gap: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding:10px;
+
+}
+
+.contact-left h2{
+
+   color: white
+    
+}
+
+
+.contact-left-title hr{
+
+    border: none;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.contact-inputs {
+
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-size: 80%;
+  color: #666;
+  border-radius: 50px;
+
+}
+
+.contact-left textarea {
+
+   height: 140px;
+   padding-top: 15px;
+   border-radius: 20px;
+
+
+}
+
+.contact-inputs:focus{
+
+    border: 2px solid rgb(78, 221, 78);
+
+
+}
+
+.contact-inputs::placeholder{
+
+   color: rgb(202, 202, 202);
+
+}
+
+.contact-left button{
+
+   display: flex;
+   align-items: center;
+   width: 20%;
+   padding: 15px 30px;
+   font-size: 16px;
+   color: #fff;
+   gap: 10px;
+   border: none;
+   border-radius: 50px;
+   background: linear-gradient(270deg, rgb(104, 245, 104), rgb(6, 95, 43));
+   cursor: pointer;
+}
+
+
+@media all and (min-width:400px){
+
+  body{
+
+
+    font-size: 80%;
+ 
+
+} 
+
+h2{
+
+font-weight: 500;
+    
+}
+
+    main{
+
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    /*padding-top: 20px;
+    padding-bottom: 40px;*/
+  
+  }
+    
+}
+
+@media all and (min-width:500px){
+
+  body{
+
+
+    font-size: 100%;
+ 
+
+} 
+
+h2{
+
+font-weight: 500;
+    
+}
+
+    main{
+
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    /*padding-top: 20px;
+    padding-bottom: 40px;*/
+  
+  }
+    
+}
+
+@media all and (min-width:772px){
+
+
+main{
+
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    /*padding-top: 20px;
+    padding-bottom: 40px;*/
+  
+  }
+
+
+    body{
+
+        font-size: 120%;
+
+    
+    }
+
+    h2{
+        font-weight: 700;
+    
+    }
+
+    main {
+
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+        padding:10px;
+        align-items:center;
+    
+    
+    }
+
+    main > :first-child{
+
+        grid-column: 1 / span 2;
+
+    }
+
+    .imageContainer img {
+
+        width: 80%;
+        padding: 5px;
+        object-fit: cover;
+        align-items: center;
+    
+    }
+
+
+
+}
