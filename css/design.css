@@ -1,324 +1,695 @@
 @font-face {
-    font-family: "Garet-Book";
-    src: url(../fonts/Garet-Book.ttf) format('truetype');
-    src: url(../fonts/Garet-Book.woff) format('truetype');
-    src: url(../fonts/Garet-Book.woff2) format('truetype');
+  font-family: "Garet-Book";
+  src: url(../fonts/Garet-Book.ttf) format('truetype');
+  src: url(../fonts/Garet-Book.woff) format('truetype');
+  src: url(../fonts/Garet-Book.woff2) format('truetype');
+ 
 
 }
 
 html{
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
 
 body{
 
-    font-family: "Garet-Book", sans-serif;
-    font-size: 50%;
-    margin: 0;
-    padding: 0;
+  font-family: "Garet-Book", sans-serif;
+  font-size: 50%;
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff 80%, gray 80%);
 
 }
 
 /*header{
 
-    height: 300px;
-    margin-top: 0;
-    border-bottom: 0;
-    margin-bottom: 0;
+  height: 300px;
+  margin-top: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
 }*/
 
 header {
-    position:  relative; /* Essential for positioning the pseudo-element overlay */
-    background-image: url('../images/pexels-kindelmedia-9889058.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    z-index: 1;
+  position:  relative; 
+  background-image: url('../images/pexels-kindelmedia-9889058.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 1;
+
 }
 
 header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* Add your gradient or solid color overlay here */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)); 
-    z-index: -1; /* Puts the overlay behind the header content */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Add your gradient or solid color overlay here */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)); 
+  z-index: -1; /* Puts the overlay behind the header content */
+}
+
+#short-header{
+
+  position:  fixed; /* Essential for positioning the pseudo-element overlay */
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  height: 4vh;
+  top: -1000px;
+  width:100%;
+  justify-content: left;
+  align-items: left;
+  z-index: 1000;
+
+}
+
+
+#short-header::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+/* Add your gradient or solid color overlay here */
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); 
+z-index: -1; /* Puts the overlay behind the header content */
+
+}
+
+.navbox1{
+
+margin-left: 60px;
+margin-right: 60px;
+display: grid;
+grid-template-columns: 40% 40%;
+justify-content: center;
+row-gap: 20px;
+column-gap: 20px;
+padding:10px;
+align-items:center;
+
+}
+
+.navbox1 a{
+
+  font-size:140%
+
+}
+
+
+.navbox1 div{
+
+align-items: center;
+object-fit: cover;
+
+}
+
+.navbox1 > :first-child{
+
+grid-column: 1 / span 2;
+object-fit: cover;
+
+}
+
+.navbox2{
+
+display: flex;
+flex-direction: row;
+padding:10px;
+margin-left: 20px;
+margin-right: 20px;
+align-items:center;
+
+}
+
+.navbox2 div{
+
+margin: 10px;
+padding: 10px;
+align-items: center;
+object-fit: cover;
+
+}
+
+
+a{
+
+color:white;
+text-decoration: underline;
+
+}
+.logo{
+
+width: 200px;
+height: 200px;
+
 }
 
 header img {
 
-    display: block;
+  display: block;
 
 
 }
 
 main{
 
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+margin-left: 60px;
+margin-right: 60px;
+margin-top: 30px;
+margin-bottom: 30px;
 
 }
 
 main {
 
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    row-gap: 10px;
-    column-gap: 10px;
-    padding:10px;
-    align-items:center;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding:10px;
+  align-items:center;
 
 
 }
 
 .imageContainer {
 
-   margin:auto;
+ margin:auto;
 
 }
 
 .imageContainer img {
 
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  object-fit: cover;
 
 }
 
-h2{
-    font-weight: 200;
+h1{
+  font-weight: 200;
 
 }
 
 
 header{
 
-   align-items: center; 
-   background-color: gray;
+ align-items: center; 
+ background-color: gray;
 
 
 }
 
 .email-footer{
 
-    /*display: flex;*/
-    background-color: gray;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: 70%;
-    align-items: center;
-    justify-content: space-evenly;
+  /*display: flex;*/
+  background-color: gray;
+  height: 570px;
+  display: grid;
+  grid-template-columns: 70%;
+  align-items: center;
+  justify-content: space-evenly;
 
 }
 
 .contact-left{
 
-    background-color: gray;
-    display: grid;
-    grid-template-columns: auto ;
-    align-items: center;
-    gap: 20px;
-    row-gap: 10px;
-    column-gap: 10px;
-    padding:10px;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: auto ;
+  align-items: center;
+  gap: 20px;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding:10px;
 
 }
 
-.contact-left h2{
+.contact-left h1{
 
-   color: white
-    
+ color: white;
+ font-size: 300%;
+  
 }
 
 
 .contact-left-title hr{
 
-    border: none;
-    width: 100%;
-    height: 5px;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  border: none;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
 
 }
 
 .contact-inputs {
 
-  width: 100%;
-  height: 50px;
-  border: none;
-  outline: none;
-  padding-left: 25px;
-  font-size: 80%;
-  color: #666;
-  border-radius: 50px;
+width: 100%;
+height: 50px;
+border: none;
+outline: none;
+padding-left: 25px;
+font-size: 150%;
+color: #666;
+border-radius: 50px;
 
 }
 
 .contact-left textarea {
 
-   height: 140px;
-   padding-top: 15px;
-   border-radius: 20px;
+ height: 140px;
+ padding-top: 15px;
+ border-radius: 20px;
 
 
 }
 
 .contact-inputs:focus{
 
-    border: 2px solid rgb(78, 221, 78);
+  border: 2px solid rgb(78, 221, 78);
 
 
 }
 
 .contact-inputs::placeholder{
 
-   color: rgb(202, 202, 202);
+ color: rgb(202, 202, 202);
 
 }
 
 .contact-left button{
 
-   display: flex;
-   align-items: center;
-   width: 20%;
-   padding: 15px 30px;
-   font-size: 16px;
-   color: #fff;
-   gap: 10px;
-   border: none;
-   border-radius: 50px;
-   background: linear-gradient(270deg, rgb(104, 245, 104), rgb(6, 95, 43));
-   cursor: pointer;
+    
+  /*display: flex;*/
+
+  justify-self: left;
+ /*align-items: center;*/
+ /*width: 20%;*/
+ padding: 15px 30px;
+ font-size: 16px;
+ color: #fff;
+ gap: 10px;
+ border: none;
+ border-radius: 50px;
+ background: linear-gradient(270deg, rgb(104, 245, 104), rgb(6, 95, 43));
+ cursor: pointer;
+ transition-duration: 0.2s;
+}
+
+.contact-left button:hover{
+
+  color: rgb(6, 95, 43);
+  background: linear-gradient(270deg, rgb(230, 255, 230), rgb(230, 255, 230));
+
 }
 
 
 @media all and (min-width:400px){
 
-  body{
+header{
 
+   height: 400px;
+  
+}
 
-    font-size: 80%;
- 
+.logo{
 
-} 
-
-h2{
-
-font-weight: 500;
+  width: 250px;
+  height: 250px ;
     
 }
 
-    main{
+.navbox1 img{
 
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 30px ;
-    margin-bottom: 30px;
-    /*padding-top: 20px;
-    padding-bottom: 40px;*/
+ object-fit: cover;
   
-  }
-    
+}
+
+body{
+
+
+  font-size: 80%;
+
+
+} 
+
+
+h1{
+
+font-weight: 500;
+  
+}
+
+  main{
+
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 30px ;
+  margin-bottom: 30px;
+  /*padding-top: 20px;
+  padding-bottom: 40px;*/
+
+}
+
+
+.email-footer{
+ 
+  height: 680px;
+ 
+
+}
+
+.contact-left{
+
+  gap: 20px;
+  row-gap: 13px;
+  column-gap: 10px;
+
+
+}
+
+.contact-left h1{
+
+ font-size: 200%;
+  
+}
+
+
+.contact-inputs {
+
+
+font-size: 120%;
+
+
+}
+
+
+.contact-left button{
+
+ font-size: 110%;
+ border-radius: 50px;
+
+}
+
+  
+  
 }
 
 @media all and (min-width:500px){
 
-  body{
+body{
 
 
-    font-size: 100%;
- 
+  font-size: 100%;
+
 
 } 
 
-h2{
+h1{
 
 font-weight: 500;
-    
+  
 }
 
-    main{
+  main{
 
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-top: 30px ;
-    margin-bottom: 30px;
-    /*padding-top: 20px;
-    padding-bottom: 40px;*/
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 30px ;
+  margin-bottom: 30px;
+  /*padding-top: 20px;
+  padding-bottom: 40px;*/
+
+}
+
+    
+.email-footer{
+
+ 
+height: 600px;
+
+
+}
+
+.contact-left{
+
+row-gap: 15px;
+
+
+}
+
+.contact-left h1{
+
+color: white;
+font-size: 200%;
+
+}
+
+.contact-inputs {
+
+font-size: 100%;
+
+
+}
+
+
+.contact-left button{
+
+
+font-size: 100%;
+
+
+
+}
+  
+}
+
+@media all and (min-width:760px){
+
+header{
+
+  position:  relative; 
+  background-image: url('../images/pexels-kindelmedia-9889058.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 756px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+
+.logo{
+
+width: 400px;
+height: 400px;
+
+}
+
+
+  body{
+
+    font-size: 120%;
+
   
   }
+
+  h1{
+      font-weight: 700;
+  
+  }
+
+  main {
+
+      
+      margin-left: 70px;
+      margin-right: 70px;
+      margin-top: 70px ;
+      margin-bottom: 70px;
+      display: grid;
+      grid-template-columns: 40% 40%;
+      justify-content: center;
+      row-gap: 20px;
+      column-gap: 20px;
+      padding:10px;
+      align-items:center;
+  
+  
+  }
+
+  main > :first-child{
+
+      grid-column: 1 / span 2;
+
+  }
+
+  .imageContainer img {
+
+      width: 80%;
+      padding: 5px;
+      object-fit: cover;
+      align-items: center;
+  
+  }
+  .email-footer{
+
+    height: 600px;
+  
+
+}
+
+
+
+.contact-left-title{
+
+   padding:-10px;
     
 }
 
-@media all and (min-width:772px){
+.contact-left h1{
+
+   color: white;
+   font-size: 200%;
+    
+}
+
+
+.contact-left-title hr{
+
+    width: 100%;
+   
+
+}
+
+.contact-inputs {
+
+  font-size: 80%;
+
+}
+
+
+
+.contact-left button{
+    
+   font-size: 90%;
+   
+}
+
+
+
+ /* header{
+
+      position:  relative; 
+      background-image: url('../images/pexels-kindelmedia-9889058.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      transition: height 0.4s ease-in-out;
+      
+  }
+  
+  */
+
+
+
+}
+
+@media all and (min-width:998px){
+
+#short-header{
+
+  position:  fixed; /* Essential for positioning the pseudo-element overlay */
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 152px;
+  top: -200px;
+  width:100%;
+  justify-content: left;
+  align-items: left;
+  z-index: 1000;
+  transition: top 0.3s; 
+
+}
+
+#short-header .logo{
+
+width: 90px;
+height: 90px;
+
+}
+
+#short-header::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+/* Add your gradient or solid color overlay here */
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); 
+z-index: -1; /* Puts the overlay behind the header content */
+}
+
+#short-header.sticky {
+top: 0; /* Pop into view */
+}
 
 
 main{
 
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 30px ;
-    margin-bottom: 30px;
-    /*padding-top: 20px;
-    padding-bottom: 40px;*/
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+.email-footer{
+
+ 
+  height: 650px;
+  
   
   }
 
+.contact-left textarea {
 
-    body{
+ height: 200px;
 
-        font-size: 120%;
+}
 
-    
-    }
-
-    h2{
-        font-weight: 700;
-    
-    }
-
-    main {
-
-        display: grid;
-        grid-template-columns: 40% 40%;
-        justify-content: center;
-        row-gap: 20px;
-        column-gap: 20px;
-        padding:10px;
-        align-items:center;
-    
-    
-    }
-
-    main > :first-child{
-
-        grid-column: 1 / span 2;
-
-    }
-
-    .imageContainer img {
-
-        width: 80%;
-        padding: 5px;
-        object-fit: cover;
-        align-items: center;
-    
-    }
 
 
 
 }
+
