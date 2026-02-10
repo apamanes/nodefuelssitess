@@ -4,7 +4,7 @@ const header = document.getElementById("short-header");
 
 // Define the scroll limit (in pixels)
 // The header will appear after scrolling this far down
-const scrollLimit = 600; 
+const scrollLimit = 390; 
 
 // The function that runs whenever the user scrolls
 function handleScroll() {
@@ -48,3 +48,5 @@ window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   header.classList.toggle("shrink4", window.scrollY > 100);
 });*/
+
+
