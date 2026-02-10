@@ -96,21 +96,20 @@ z-index: -1; /* Puts the overlay behind the header content */
 
 .navbox1{
 
-margin-left: 60px;
-margin-right: 60px;
-display: grid;
-grid-template-columns: 40% 40%;
-justify-content: center;
-row-gap: 20px;
-column-gap: 20px;
-padding:10px;
-align-items:center;
-
+  margin-left: 40px;
+  margin-right: 30px;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  padding:10px;
+  align-items:center;
+  
 }
 
-.navbox1 a{
 
-  font-size:140%
+.navbox1 p{
+
+  font-size:200%
 
 }
 
@@ -122,12 +121,12 @@ object-fit: cover;
 
 }
 
-.navbox1 > :first-child{
+/*.navbox1 > :first-child{
 
 grid-column: 1 / span 2;
 object-fit: cover;
 
-}
+}*/
 
 .navbox2{
 
@@ -158,8 +157,22 @@ text-decoration: underline;
 }
 .logo{
 
-width: 200px;
-height: 200px;
+width: 250px;
+height: 250px;
+
+}
+.navbox2 > :nth-child(2) a {
+
+  opacity: 0.6;
+  text-decoration: none;
+
+}
+
+.navbox2 img{
+
+  width: 120px;
+  height: 120px;
+
 
 }
 
@@ -221,7 +234,7 @@ header{
 
 }
 
-.email-footer{
+#email-footer{
 
   /*display: flex;*/
   background-color: gray;
@@ -235,7 +248,7 @@ header{
 
 .contact-left{
 
-  background-color: gray;
+
   display: grid;
   grid-template-columns: auto ;
   align-items: center;
@@ -375,7 +388,7 @@ font-weight: 500;
 }
 
 
-.email-footer{
+#email-footer{
  
   height: 680px;
  
@@ -420,6 +433,21 @@ font-size: 120%;
 
 @media all and (min-width:500px){
 
+
+  header{
+
+    height: 520px;
+
+  }
+
+  .logo{
+
+    width: 350px;
+    height: 350px;
+        
+      }
+    
+
 body{
 
 
@@ -446,7 +474,7 @@ font-weight: 500;
 }
 
     
-.email-footer{
+#email-footer{
 
  
 height: 600px;
@@ -495,7 +523,7 @@ header{
   background-image: url('../images/pexels-kindelmedia-9889058.jpg');
   background-size: cover;
   background-position: center;
-  height: 756px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,6 +537,14 @@ width: 400px;
 height: 400px;
 
 }
+
+.navbox1 p{
+
+  font-size:150%
+
+}
+
+
 
 
   body{
@@ -555,7 +591,7 @@ height: 400px;
       align-items: center;
   
   }
-  .email-footer{
+  #email-footer{
 
     height: 600px;
   
@@ -624,6 +660,14 @@ height: 400px;
 
 @media all and (min-width:998px){
 
+
+  .navbox1 p{
+
+    font-size:170%
+  
+  }
+  
+
 #short-header{
 
   position:  fixed; /* Essential for positioning the pseudo-element overlay */
@@ -674,7 +718,7 @@ margin-bottom: 50px;
 
 }
 
-.email-footer{
+#email-footer{
 
  
   height: 650px;
@@ -689,7 +733,82 @@ margin-bottom: 50px;
 }
 
 
+}
+
+@media screen and (min-width:998px) and (prefers-reduced-motion:reduce){
+
+  .navbox1 p{
+
+    font-size:170%
+  
+  }
+  
+
+#short-header{
+
+    transition: none;
+
+}
+
+
+
+#short-header.sticky {
+top: 0; /* Pop into view */
+}
+
+
+main{
+
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+#email-footer{
+
+ 
+  height: 650px;
+  
+  
+  }
+
+.contact-left textarea {
+
+ height: 200px;
+
+}
+
+html{
+
+  scroll-behavior: auto;
+
+}
 
 
 }
+
+@media (prefers-color-scheme: dark){
+
+  body{
+    color: white;
+   
+    background: linear-gradient(to bottom, gray 80%, gray 80%);
+  
+  }
+
+  #email-footer{
+
+     background-color: rgb(30, 75, 30);
+
+
+  }
+
+ 
+  
+
+}
+
+
 
