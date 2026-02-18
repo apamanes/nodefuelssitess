@@ -23,30 +23,6 @@ window.addEventListener("scroll", handleScroll);
 
 
 
-/*let scrolled = window.scrollY;
-console.log("Pixels scrolled: " + scrolled);
 
-let totalHeight = document.documentElement.scrollHeight;
-console.log("Total height: " + totalHeight);
-
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  header.classList.toggle("shrink1", window.scrollY > 25);
-});
-
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  header.classList.toggle("shrink2", window.scrollY > 50);
-});
-
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  header.classList.toggle("shrink3", window.scrollY > 75);
-});
-
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  header.classList.toggle("shrink4", window.scrollY > 100);
-});*/
 
 
