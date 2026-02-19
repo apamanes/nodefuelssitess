@@ -134,6 +134,18 @@ z-index: -1; /* Puts the overlay behind the header content */
   padding: 12px;
   color: rgb(108, 62, 37);
   border-radius: 30px;
+  text-decoration: none;
+
+  
+}
+
+.inner-contact a:hover{
+
+
+  background-color:  rgb(190 253 192 / 88%);
+  color: rgb(12 126 40);
+  text-decoration: none;
+
 
   
 }
@@ -172,6 +184,9 @@ color:white;
 text-decoration: underline;
 
 }
+
+
+
 .logo{
 
 width: 250px;
@@ -184,6 +199,29 @@ height: 250px;
   text-decoration: none;
 
 }
+
+.navbox2 > :nth-child(3) a {
+
+  font-size:80%;
+  background-color:rgba(255, 255, 255, 0.841);
+  padding: 12px;
+  color: rgb(108, 62, 37);
+  border-radius: 30px;
+  text-decoration: none;
+
+}
+
+.navbox2 > :nth-child(3) a:hover{
+
+
+  background-color:  rgb(190 253 192 / 88%);
+  color: rgb(12 126 40);
+   text-decoration: none;
+
+
+  
+}
+
 
 .navbox2 img{
 
