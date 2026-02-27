@@ -139,7 +139,7 @@ z-index: -1; /* Puts the overlay behind the header content */
   
 }
 
-.inner-contact a:hover{
+.inner-contact a:hover,a:focus{
 
 
   background-color:  rgb(190 253 192 / 88%);
@@ -211,7 +211,7 @@ height: 250px;
 
 }
 
-.navbox2 > :nth-child(3) a:hover{
+.navbox2 > :nth-child(3) a:hover,a:focus-within{
 
 
   background-color:  rgb(190 253 192 / 88%);
@@ -429,7 +429,7 @@ border-radius: 50px;
  transition-duration: 0.2s;
 }
 
-.contact-left button:hover{
+.contact-left button:hover,.contact-left button:focus{
 
   color: rgb(6, 95, 43);
   background: linear-gradient(270deg, rgb(230, 255, 230), rgb(230, 255, 230));
