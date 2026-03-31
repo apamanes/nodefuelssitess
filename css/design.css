@@ -448,9 +448,8 @@ border-radius: 50px;
 }
 .copyright p{
 
-  font-size: 9%;
+  font-size: 11%;
   color: white;
-  color: rgba(255, 255, 255, 0.5); 
   padding-left:10px;
 }
 
@@ -599,8 +598,7 @@ font-weight: 500;
   margin-right: 90px;
   margin-top: 30px ;
   margin-bottom: 30px;
-  /*padding-top: 20px;
-  padding-bottom: 40px;*/
+  padding-bottom: 60px;
 
 }
 
@@ -647,6 +645,8 @@ font-size: 100%;
 }
 
 @media all and (min-width:760px){
+
+
 
 header{
 
@@ -792,6 +792,17 @@ height: 400px;
     
    font-size: 90%;
    
+}
+
+
+.copyright p{
+
+  font-size: 11%;
+  color: white;
+  padding-left:10px;
+  padding-top:10px;
+  padding-bottom:15px;
+
 }
 
 
@@ -953,6 +964,7 @@ html{
   
 
 }
+
 
 
 
