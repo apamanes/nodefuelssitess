@@ -26,7 +26,7 @@ body{
   min-height: 100vh; 
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #ffffff 80%, gray 80%);
+  /*background: linear-gradient(to bottom, #ffffff 80%,  #595959 80%);*/
 
 }
 
@@ -334,7 +334,7 @@ header{
 #email-footer{
 
   /*display: flex;*/
-  background-color: gray;
+  background-color: #595959;
   height: 570px;
   display: grid;
   grid-template-columns: 70%;
@@ -598,7 +598,7 @@ font-weight: 500;
   margin-right: 90px;
   margin-top: 30px ;
   margin-bottom: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 
 }
 
@@ -964,6 +964,7 @@ html{
   
 
 }
+
 
 
 
