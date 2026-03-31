@@ -343,6 +343,9 @@ header{
 
 }
 
+
+
+
 .contact-left{
 
 
@@ -363,6 +366,12 @@ header{
   
 }
 
+.contact-left-title p{
+
+  color: white;
+  font-size: 80%;
+
+}
 
 .contact-left-title hr{
 
@@ -374,6 +383,8 @@ header{
   margin-bottom: 20px;
 
 }
+
+
 
 .contact-inputs {
 
@@ -435,7 +446,13 @@ border-radius: 50px;
   background: linear-gradient(270deg, rgb(230, 255, 230), rgb(230, 255, 230));
 
 }
+.copyright p{
 
+  font-size: 9%;
+  color: white;
+  color: rgba(255, 255, 255, 0.5); 
+  padding-left:10px;
+}
 
 @media all and (min-width:400px){
 
@@ -936,11 +953,6 @@ html{
   
 
 }
-
-
-
-
-
 
 
 
