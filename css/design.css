@@ -335,7 +335,7 @@ header{
 
   /*display: flex;*/
   background-color: #595959;
-  height: 570px;
+  height: 630px;
   display: grid;
   grid-template-columns: 70%;
   align-items: center;
@@ -343,7 +343,12 @@ header{
 
 }
 
+label{
 
+ font-size:130%;
+  color:white;
+  
+}
 
 
 .contact-left{
@@ -518,9 +523,15 @@ font-weight: 500;
 
 #email-footer{
  
-  height: 680px;
+  height: 700px;
  
 
+}
+
+label{
+
+ font-size:90%;
+  
 }
 
 .contact-left{
@@ -606,10 +617,11 @@ font-weight: 500;
 #email-footer{
 
  
-height: 600px;
+height: 700px;
 
 
 }
+
 
 .contact-left{
 
@@ -752,12 +764,16 @@ height: 400px;
   }
   #email-footer{
 
-    height: 600px;
+    height: 750px;
   
 
 }
 
+label{
 
+ font-size:80%;
+  
+}
 
 .contact-left-title{
 
@@ -901,10 +917,11 @@ grid-template-columns: 40% 40%;
 #email-footer{
 
  
-  height: 650px;
+  height: 800px;
   
   
   }
+
 
 .contact-left textarea {
 
@@ -964,6 +981,7 @@ html{
   
 
 }
+
 
 
 
