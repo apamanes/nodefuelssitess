@@ -93,13 +93,13 @@
      <form action = "https://api.web3forms.com/submit" method="POST" class = "contact-left">
         <div class = "contact-left-title">
             <h1> Get in Touch</h1>
-            <p> We are available Monday to Friday</p>
+            <p> We are available Monday to Friday 9-5pm except holidays. You can leave a message here.</p>
             <hr>
         </div>
-        <input type="hidden" name="access_key" value="c425520c-05fb-4ed8-ba33-34a499c1b69c">
-        <input type = "text" name = "name" aria-labelledby= "Your Name" placeholder="Your Name" class="contact-inputs" required ="required">
-        <input type = "email" name = "email" aria-labelledby= "Your Email" placeholder="Your Email" class="contact-inputs" required ="required">
-        <textarea name = "message" aria-labelledby= "Your response" placeholder="In what do you need help with?" class = "contact-inputs" required="required"></textarea>
+        <input type="hidden" name="access_key" value="c425520c-05fb-4ed8-ba33-34a499c1b69c"> 
+        <label id="typeName" for="box1"><input id= "box1" aria-labelledby="typeName" type = "text" name = "name"  placeholder="Your Name" class="contact-inputs" required ="required">
+        <label id="typeEmail" for="box2"><input id= "box2" aria-labelledby="typeEmail" type = "email" name = "email" autocomplete="email" placeholder="Your Email" class="contact-inputs" required ="required">
+        <label id="typeMessage" for="box3"><textarea id= "box3" aria-labelledby="typeMessage" name = "message" autocomplete="message" placeholder="In what do you need help with?" class = "contact-inputs" required="required"></textarea>
         <button type="submit"> Send </button>
 
      </form>
